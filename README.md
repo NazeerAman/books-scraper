@@ -1,8 +1,6 @@
 # 📚 Books to Scrape - Web Scraper
 
-A Python web scraping project that extracts book information from [BooksToScrape.com](https://books.toscrape.com/), a sandbox site made for practicing scraping techniques.
-
-This script scrapes multiple pages and collects useful data including **Title**, **Price**, **Star Rating**, and **Availability**, then organizes the data using `pandas`.
+A Python web scraping project that extracts book data from [BooksToScrape.com](https://books.toscrape.com). It collects book titles, prices, ratings, and availability using BeautifulSoup and organizes the results using pandas.
 
 ---
 
@@ -19,24 +17,76 @@ This script scrapes multiple pages and collects useful data including **Title**,
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 - Python 3
-- `requests` – for sending HTTP requests
-- `BeautifulSoup` – for parsing HTML content
-- `pandas` – for organizing and exporting data
+- BeautifulSoup (`bs4`)
+- requests
+- pandas
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/NazeerAman/books-scraper.git
+cd books-scraper
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the scraper:
+
+   use the Jupyter notebook:
+
+```bash
+jupyter notebook books_web_scraper.ipynb
+```
 
 ---
 
 ## 🧾 Output Sample
 
-| Title                  | Price | Rating | Availability     |
-|------------------------|-------|--------|------------------|
-| A Light in the Attic  | 51.77 | Three  | In stock         |
-| Tipping the Velvet     | 53.74 | One    | In stock         |
-| ...                    | ...   | ...    | ...              |
+| Title               | Price | Rating | Availability |
+|---------------------|-------|--------|----------------|
+| A Light in the Attic | 51.77 | Three  | In stock       |
+| Tipping the Velvet  | 53.74 | One    | In stock       |
+| ...                 | ...   | ...    | ...            |
 
 ---
 
-## 📂 File Structure
+## 📂 Project Structure
 
+```
+books-scraper/
+├── books_web_scraper.ipynb    # Jupyter Notebook version of the scraper
+├── books.csv                  # Scraped book data (CSV)
+└── README.md                  # Project documentation
+```
+
+---
+
+## 🔐 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgments
+
+- Thanks to [BooksToScrape.com](https://books.toscrape.com) for providing a free practice website for web scraping.
+
+---
+
+## 💡 Author
+
+**Nazeer Aman**  
+GitHub: [@NazeerAman](https://github.com/NazeerAman)
+
+---
